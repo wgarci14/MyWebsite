@@ -1,0 +1,71 @@
+@media only screen and (max-width: 425px){
+    /* Home Section */
+    .home .container .subheading{
+        margin-left: 1rem;
+    }
+    /* .home .container .row {
+       margin: 1rem;
+    } */
+    
+    /* .home .container .col-sm-12 {
+        margin: 1rem;
+    } */
+
+    /* #offer .row .col-sm-12 p {
+        margin-right: 1rem;
+    } */
+
+    /* Skills Section */
+    .skills .container .subheading{
+        margin: 1rem;
+    }
+    .skills .container .dev-icons {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* Experience Section */
+    .experience .container .subheading {
+        margin-left: 1rem;
+    }
+    .experience .container-fluid .subheading{
+        margin-left: 1rem;
+    }
+    .experience .container .company {
+        margin-left: 1rem;
+    }
+    .experience .container p {
+        margin-left: 1rem;
+    }
+    .experience .container li {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+     /* Projects Section */
+    .projects .container .subheading{
+        margin-left: 1rem;
+    }
+    .projects .container .company {
+        margin-left: 1rem;
+    }
+    .projects .container li {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .projects .container p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* Contact section */
+    .contact .container .subheading{
+        margin-left: 1rem;
+    }
+    .contact .container p {
+        margin-left: 1rem;
+    }
+    .contact .container .row{
+       margin: 0.25rem;
+    }
+}
