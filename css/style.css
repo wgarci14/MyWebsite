@@ -76,6 +76,7 @@ body {
 /* social media buttons */
 .fa-ul a:hover {
     text-decoration: none;
+    
 }
 
 .fa-indeed  {
@@ -95,6 +96,11 @@ body {
 
 .fa-twitter {
     color: #55ACEE;
+    padding-right: 5px;
+}
+
+.fa-github {
+    color: #222222;
     padding-right: 5px;
 }
 
