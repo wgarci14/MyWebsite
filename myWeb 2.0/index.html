@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- CSS Theme-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500"
+    type="text/css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mobile-style.css">
+  <link rel="stylesheet" href="./css/dark-mode.css">
+
+  <!--Font Awesome Icons-->
+  <script src="https://kit.fontawesome.com/419286da50.js" crossorigin="anonymous"></script>
+
+  <!--Scrollreveal-->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+  <title>William Garcia</title>
+
+  <!--Quotes-->
+  <script type="text/javascript">
+
+    function getQuote() {
+      var quotes = new Array();
+      var source = new Array();
+
+      quotes[0] = "If you think you are worth what you know, you are very wrong. Your knowledge today does not have much value beyond a couple of years. Your value is what you can learn and how easily you can adapt to the changes this profession brings so often.";
+      source[0] = "Jose M. Aguilar.";
+
+      quotes[1] = "Mostly, when you see programmers, they aren’t doing anything.  One of the attractive things about programmers is that you cannot tell whether or not they are working simply by looking at them.  Very often they’re sitting there seemingly drinking coffee and gossiping, or just staring into space.  What the programmer is trying to do is get a handle on all the individual and unrelated ideas that are scampering around in his head.";
+      source[1] = "Charles M. Strauss";
+
+      quotes[2] = "Commenting your code is like cleaning your bathroom — you never want to do it, but it really does create a more pleasant experience for you and your guests.";
+      source[2] = "Ryan Campbell";
+
+      quotes[3] = "It’s OK to figure out murder mysteries, but you shouldn’t need to figure out code.  You should be able to read it.";
+      source[3] = "Steve McConnell";
+
+      quotes[4] = "Looking at code you wrote more than two weeks ago is like looking at code you are seeing for the first time.";
+      source[4] = "Dan Hurvitz";
+
+      quotes[5] = "The computer was born to solve problems that did not exist before.";
+      source[5] = "Bill Gates";
+
+      quotes[6] = "Everybody in this country should learn to program a computer because it teaches you how to think";
+      source[6] = "Steve Jobs";
+
+      // quotes[] = "";
+      // source[] = "";
+
+      // quotes[] = "";
+      // source[] = "";
+
+      // quotes[] = "";
+      // source[] = "";
+
+      i = Math.floor(Math.random() * quotes.length);
+
+      document.write("<h3 class=\"q\">\"" + quotes[i] + "\"</h3>")
+      document.write("<em class=\"q\">- " + source[i] + "</em>");
+      
+    }
+
+    function getAge() { 
+      var dob = new Date(1994, 5, 29);
+      var diff_ms = Date.now() - dob.getTime();
+      var age_dt = new Date(diff_ms);   
+      var age = Math.abs(age_dt.getUTCFullYear() - 1970);
+
+      document.write("<div class=\"mb-1 text-muted\"> Age: " + age + " yrs </div>")      
+    }
+
+  </script>
+
+</head>
+
+<!-- <body> -->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">WILLIAM GARCIA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false"><i class="fas fa-user-circle"></i> Home</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#about">About Me</a>
+            <a class="dropdown-item" href="#offer">My Offer</a>
+            <a class="dropdown-item" href="#education">Education</a>
+            <!-- <a class="dropdown-item" href="#hobbies">Hobbies</a> -->
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false"><i class="fas fa-wrench"></i> Skills</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#programming">Programming Language</a>
+            <a class="dropdown-item" href="#op">Operating Systems</a>
+            <a class="dropdown-item" href="#software">Softwares</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact"><i class="fas fa-mail-bulk"></i> Contact</a>
+        </li>
+        <div class="nav-item" style="padding: 10px 10px; text-align: end;">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label text-white" for="darkSwitch">Dark Mode</label>
+          </div>
+          <script src="./js/dark-mode-switch.min.js"></script>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+    <div class="jumbotron">
+      <div class="col-md-6 col-sm-12 px-0 quote">
+        <script type="text/javascript">
+          getQuote();
+        </script>
+      </div>
+    </div>
+  </main>
+
+  <section class="home">
+
+    <div class="container" style="padding: 90px 0px 0px 0px;" id="about">
+      <div class="subheading mb-3">About Me</div>
+      <div class="aboutme row no-gutters justify-content-md-center">
+        <div class="col col-md-12 col-sm-12">
+          <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="avatar col-auto d-none d-lg-block">
+              <img class="rounded" src="./img/me.jpg" width="250" height="250" alt="myself">
+            </div>
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0 text-primary">William Garcia</h3>
+              <script type="text/javascript">
+                getAge();
+              </script>
+              <!-- <div class="mb-1 text-muted">May 29</div> -->
+              <p class="card-text mb-auto">I recently graduate from California State University of Los Angeles with a B.S.
+                in Computer Science, with a desire for career growth in a reputable company where I can apply the
+                fundamentals learned throughout my baccalaureate education, utilize my industry-related skills, and
+                further develop my information technology knowledge.
+                I am currently working with Modern Parking Inc as a cashier in Venice beach and at other LA County
+                beaches. I am determined and motivate to increase my knowledge in Computer Science and willing to work
+                when needed.
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!--Offering-->
+    <div class="container" style="padding: 90px 0px;" id="offer">
+      <div class="subheading mb-3">What I can offer</div>
+
+      <div style="margin-top:25px">
+
+        <div class="row no-gutters">
+          <div class="col-md-3 col-sm-12 offer1" >
+            <i class="fas fa-user-tie fa-2x"></i>
+            <br><b class="large">Responsible</b>
+            <p>To ensure every part of their job is getting done and will do what is needed to do to complete tasks.
+              Taking responsibility for duties and mistakes.</p>
+          </div>
+
+          <div class="col-md-3 col-sm-12 offer2">
+            <i class="far fa-clock fa-2x"></i>
+            <br><b class="large">Punctual</b>
+            <p>A dependable person who is great at time management. Always on time for organized events, work-related or
+              otherwise.</p>
+          </div>
+
+          <div class="col-md-3 col-sm-12 offer3">
+            <i class="far fa-heart fa-2x"></i>
+            <br><b class="large">Passion</b>
+            <p>Always energetic and eager to learn new skills. Hardworking and always the last to leave the office in
+              the evening.</p>
+          </div>
+
+          <div class="col-md-3 col-sm-12 offer4">
+            <i class="far fa-lightbulb fa-2x"></i>
+            <br><b class="large">Critical Thinking</b>
+            <p>Able to think rationally, thoughtfully, and determine the best steps needed. Capable of coming up with a
+              quick and effective solution. Competent to create new and better ways to work. </p>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-md-3 col-sm-12 offer5">
+            <i class="far fa-comments fa-2x"></i>
+            <br><b class="large">Communication Skill</b>
+            <p>Written and verbally, able to communicate with coworkers and clients/customers in all situations. A key
+              strength is communication; building strong relationships with coworkers to deliver the best results.</p>
+          </div>
+
+          <div class="col-md-3 col-sm-12 offer6">
+            <i class="fas fa-random fa-rotate-270 fa-2x"></i>
+            <br><b class="large">Flexiblility</b>
+            <p>Dynamically and adaptable to every situation, can use a variety of methods and approaches in different
+              circumstances to get the best result..</p>
+          </div>
+
+          <div class="col-md-3 col-sm-12 offer7">
+            <i class="far fa-calendar-alt fa-2x"></i>
+            <br><b class="large">Organization</b>
+            <p>Competent to organize tasks and projects for coworkers, management, and at the very least, myself.</p>
+          </div>
+
+          <div class="col-md-3 col-sm-12 offer8">
+            <i class="fas fa-cogs fa-2x"></i>
+            <br><b class="large">Support</b>
+            <p>Able to work as part of a team and individually. Contribute ideas to improve collaboration, visibility,
+              accountability, and ultimately results.</p>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-md-3 col-sm-12 offer9">
+            <i class="fas fa-search fa-flip-horizontal fa-2x"></i>
+            <br><b class="large">Attentive to Detail</b>
+            <p>Follow all instructions to complete work. Pay attention to all detail to prevent potential mistakes.</p>
+          </div>
+
+          <div class="col-md-3 col-sm-12">
+            <i class="far  fa-2x"></i>
+            <br><b class="large"></b>
+            <p></p>
+          </div>
+
+          <div class="col-md-3 col-sm-12">
+            <i class="fas fa-2x"></i>
+            <br><b class="large"></b>
+            <p></p>
+          </div>
+
+          <div class="col-md-3 col-sm-12">
+            <i class="fas fa-2x"></i>
+            <br><b class="large"></b>
+            <p></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+      <!--Education-->
+      <div class="container-fuild bg-light" style="padding: 90px 0px 0px 0px;" id="education">
+        <div class="container" style="padding:0px 0px;">
+          <div class="subheading mb-3">Education</div>
+        </div>
+  
+        <section class="features-icons bg-light text-center">
+          <div class="container-fluid" style="padding: 15px 100px;">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <div class="features-icons-icon mx-auto mb-5 mb-lg-0 mb-lg-3 education-left">
+                  <div class="features-icons-icon d-flex">
+                    <i class="icon-screen-desktop m-auto text-primary"></i>
+                  </div>
+                  <h4>Bachelor of Science in Computer Science</h4>
+                  <p class="lead mb-0">
+                    <i>California State University of Los Angeles</i>, Class of 2019
+                  </p>
+                </div>
+              </div>
+  
+              <div class="col-lg-4 d-none d-md-block">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 education-right">
+                  <div class="features-icons-icon d-flex">
+                    <i class="icon-layers m-auto text-primary"></i>
+                  </div>
+                  <img src="img/csula-logo.png" alt="CSULALogo" id="csulaImg">
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </section>
+      </div>
+
+  </section>
+
+  <hr class="featurette-divider" style="margin-top: 120px;">
+
+  <section class="skills">
+
+    <div class="container-fluid" style="padding: 140px 0px;" id="programming">
+      <div class="container" style="padding:0px 0px;">
+        <div class="subheading mb-3">Programming Languages</div>
+      </div>
+    </div>
+
+    <section class="features-icons text-center" style="margin-bottom: 90px;">
+      <div class="container-fluid" style="padding: 15px 100px;">
+        <!--row1-->
+        <div class="row no-gutters">
+          <div class="col-lg-3 col-md-6 col-sm-12 javasection">
+            <div class="features-icons-icon mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-screen-desktop m-auto text-primary"></i>
+              </div>
+              <i class="fab fa-java fa-5x"></i>
+              <h3>Java</h3>
+              <p class="lead mb-0">Main programming language, 4yrs of experience</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 bootstrapsection">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-layers m-auto text-primary"></i>
+              </div>
+              <i class="fab fa-bootstrap fa-5x"></i>
+              <h3>Bootstrap 4</h3>
+              <p class="lead mb-0">Favorite front-end framework, 3yrs of experience</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 htmlsection">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-check m-auto text-primary"></i>
+              </div>
+              <i class="fab fa-html5 fa-5x"></i>
+              <h3>HTML5</h3>
+              <p class="lead mb-0">How everything started, 4yrs of experience</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 csssection">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-check m-auto text-primary"></i>
+              </div>
+              <i class="fab fa-css3-alt fa-5x"></i>
+              <h3>CSS3</h3>
+              <p class="lead mb-0">Came with HTML5, 4yrs of experience</p>
+            </div>
+          </div>
+        </div>
+        <!--Row2-->
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-6 col-sm-12 javascriptsection">
+            <div class="features-icons-icon mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-screen-desktop m-auto text-primary"></i>
+              </div>
+              <i class="fab fa-js fa-5x"></i>
+              <h3>JavaScript</h3>
+              <p class="lead mb-0">Made HTML5 more interesting, 3yrs of experience</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 pythonsection">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-layers m-auto text-primary"></i>
+              </div>
+              <i class="fab fa-python fa-5x"></i>
+              <h3>Python</h3>
+              <p class="lead mb-0">Its too easy to use that its complicated, 2yrs of experience</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 nodesection">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-check m-auto text-primary"></i>
+              </div>
+              <i class="fab fa-node fa-5x"></i>
+              <h3>Node Js</h3>
+              <p class="lead mb-0">Why not? 3yrs of experience</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Operating Systems-->
+    <div class="container-fluid bg-light" style="padding: 90px 0px;" id="op">
+      <div class="container" style="padding:0px 0px;">
+        <div class="subheading mb-3">Operating Systems</div>
+      </div>
+
+      <section class="features-icons bg-light">
+        <div class="container-fluid" style="padding: 15px 100px;">
+          <div class="row mb-2">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 apple">
+              <div
+                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static bg-secondary">
+                  <i class="fab fa-apple fa-fw fa-4x "></i>
+                  <p>
+                  <ul class="fa-ul text-white">
+                    <li class="mb-1 font-weight-bold">macOS Yosemite (currently using)</li>
+                    <li class="mb-1 ">macOS Catalina</li>
+                    <li class="mb-1 ">macOS Catalina</li>
+                    <li class="mb-1 ">macOS Mojave</li>
+                    <li class="mb-1 ">macOS High Sierra</li>
+                    <li class="mb-1 ">macOS Sierra</li>
+                    <li class="mb-1 ">OS X El Capitan</li>
+                    <li class="mb-1 ">OS X Maverick</li>
+                    <li class="mb-1 ">OS X Mountain Lion</li>
+                    <li class="mb-1 ">Mac OS X Lion<li>
+                    <li class="mb-1 ">Mac OS X Snow Leopard</li>
+                    <li class="mb-1 ">Mac OS X Leopard</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 windows">
+              <div
+                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static bg-primary">
+                  <i class="fab fa-windows fa-fw fa-4x "></i>
+                  <p>
+                  <ul class="fa-ul text-white">
+                    <li class="mb-1 font-weight-bold">Windows 10 (currently using)</li>
+                    <li class="mb-1 ">Windows 8</li>
+                    <li class="mb-1 ">Windows 7</li>
+                    <li class="mb-1 ">Windows vista</li>
+                    <li class="mb-1 ">Windows XP</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 android">
+              <div
+                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static bg-success">
+                  <i class="fab fa-android fa-fw fa-4x "></i>
+                  <p>
+                  <ul class="fa-ul text-white">
+                    <li class="mb-1 font-weight-bold">10 (currently using)</li>
+                    <li class="mb-1 ">Pie</li>
+                    <li class="mb-1 ">Oreo</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!--Software-->
+    <div class="container" style="padding: 90px 0px 0px  0px;" id="software">
+      <div class="subheading mb-3">
+        Softwares
+      </div>
+      <ul class="list-inline dev-icons">
+        <li class="list-inline-item">Visual Studio Code</li>
+        <li class="list-inline-item">Eclipse Java</li>
+        <li class="list-inline-item">Atom</li>
+        <li class="list-inline-item">Sublime Text</li>
+
+        <li class="list-inline-item">ANACONDA</li>
+        <li class="list-inline-item">Android Studios</li>
+        <li class="list-inline-item">TensorFlow</li>
+
+        <li class="list-inline-item">Payroll</li>
+        <li class="list-inline-item">Slack</li>
+        <li class="list-inline-item">Discord</li>
+        <li class="list-inline-item">Skype</li>
+
+        <li class="list-inline-item">Microsoft office</li>
+        <li class="list-inline-item">Word</li>
+        <li class="list-inline-item">Powerpoint</li>
+        <li class="list-inline-item">Excel</li>
+        <li class="list-inline-item">Outlook</li>
+        <li class="list-inline-item">OneDrive</li>
+
+        <li class="list-inline-item">Google Drive</li>
+        <li class="list-inline-item">Google plus</li>
+        <li class="list-inline-item">Github</li>
+        <li class="list-inline-item">Adobe</li>
+        <li class="list-inline-item">Dropbox</li>
+        <li class="list-inline-item">Social Media</li>
+        <li class="list-inline-item"></li>
+
+      </ul>
+    </div>
+
+  </section>
+
+  <hr class="featurette-divider" style="margin-top: 120px;">
+
+  <section class="experience">
+
+    <div class="container" style="padding:90px 0px 0px 0px;" id="experience">
+      <div class="subheading mb-3">Experience</div>
+
+      <div class="mpi mb-5">
+        <div class="subheading mb-0">
+          <h4>Parking Attendent/Cashier/Cashier Trainer</h4>
+        </div>
+        <i class="company">Modern Parking Inc.</i>, 2016 - 2020
+        <p><br><b>Duties and Resposibilities</b>
+        <ul>
+          <li>Open parking lots on time and follow all the parking lot opening requirements, including documenting
+            pre-opening
+            vehicle inventories.</li>
+          <li>Provide direction to customers, including beach regulations and parking policies.</li>
+          <li>Maintain a log of all free entries, convertibles, motorcycles (including the time of entry, license plate
+            number, and date).</li>
+          <li>Collect parking fee and issue a receipt to all vehicles entering the facility.</li>
+          <li>Report misused disabled placard, non-paying customers, and other customer's problems.</li>
+          <li>Provide emergency assistance to personnel, including lifeguards, fire, and police agencies.</li>
+          <li>Assist in monitoring film company use of lots and compliance standards.</li>
+          <li>Monitor and restrict loitering on the lot and around the booth.</li>
+          <li>Monitor access for all permit users.</li>
+          <li>Wear the proper uniform with a visible employee badge and maintain a clean appearance at all times.</li>
+          <li>Train & supervise new cashiers, making sure they know all rules and regulations for the location they are
+            and provide help when they need it.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container-fluid bg-light" style="padding: 40px 0px;">
+      <div class="container" style="padding:0px 0px;">
+        <div class="subheading mb-3">
+          <h4>Intern IT Support/Driver/Customer Service representative</h4>
+        </div>
+        <a href="https://wcpreserving.com/" target="_blank"><i class="company">Wood Care Preserving</i></a>, 2015 - 2016
+        <p><br><b>Duties and Resposibilities</b>
+        <ul>
+          <li> Troubleshoot issues with equipment such as printers, computers, and servers.</li>
+          <li> Run software updates and backups when requested.</li>
+          <li> Installed new desktops, servers, and applications.</li>
+          <!-- <li> </li>
+          <li> </li> -->
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container interntech mb-5" style="padding:40px 0px 0px 0px;">
+      <div class="subheading mb-0">
+        <h4>Intern Technician</h4>
+      </div>
+      <i class="company">Los Angeles School of Global Studies</i>, 2010 - 2012
+      <p><br><b>Duties and Resposibilities</b>
+      <ul>
+        <li> Support the IT team in installing and maintaining computer systems including hardware, software on
+          desktops, and laptops (Windows and macOS).</li>
+        <li> Troubleshoot issues with equipment such as printers, computers, and servers.</li>
+        <li> Determining causes of computer/software/network malfunctions through evaluation, testing, and resolution
+          via modifications, repair, or external support assistance.</li>
+        <li> Run software updates and backups when requested.</li>
+        <li> Installed new desktops, servers, and applications.</li>
+        <li> Research unusual bugs or issues the school teachers/staffs and students encounter.</li>
+        <li> Resolve internet and network access issues on both wired and wireless.</li>
+        <li> Meeting with staff to provide one-on-one technical assistance as needed/requested.</li>
+        <li> Providing training to staff on software and hardware use.</li>
+      </ul>
+      </p>
+    </div>
+
+  </section>
+
+  <hr class="featurette-divider" style="margin-top: 120px;">
+
+  <section class="projects">
+
+    <div class="container" style="padding:90px 0px 0px 0px;" id="projects">
+      <div class="subheading mb-3">Projects</div>
+      <div class="Aria">
+        <div class="subheading mb-0">
+          <h4>ARIA (A Rather Intelligent Automobile)</h4>
+        </div>
+        <i class="company">Aerospace</i>, 2018 - 2019
+        <p><br><b>Duties and Resposibilities</b>
+
+        <ul>
+          <li> Take notes and memos during meetings; type documents, drafts, and reports; sort and manage files.</li>
+          <li> Keep all documentation up to date</li>
+          <li> Detect and remove existing and potential errors</li>
+          <li> Knowledgeable with motion control devices such as servo motors and controllers</li>
+          <li> Able to create an area with anomalies for testing</li>
+        </ul>
+        <p><br><b>Brief Summary:</b><br>
+        ARIA consists of a remote control vehicle with various sensors and microcontroller board attached, Arduino Uno
+        R3,
+        that transmits data back to the Desktop Application Module (DAM) to manage the machine learning aspects of the
+        project.
+        Arduino Uno R3 simulation and programming can be easily translated to instructions for various types of
+        hardware,
+        such as satellites. The system’s software for ARIA is the DAM that runs on the server to provide several modes
+        and
+        features to the Elegoo vehicle.<br><br>
+
+        The software offers four types of modes: Training Mode, Testing Mode, Manual Mode, and Autopilot Mode. The
+        Training Mode allows the vehicle to read real-time data as it records data on anomalies.
+        The Testing Mode allows the vehicle to run test trials based on the stored data to learn how to behave in
+        certain
+        situations. The Manual Mode allows the vehicle to be fully controlled by the user through a user-interface on
+        the
+        DAM.
+        The Autopilot Mode allows the vehicle to run autonomously based on the testing data.<br><br>
+
+        The Vehicle Control Module (VCM) is the software on the Arduino Uno R3. It contains various libraries and
+        methods
+        that are provided by Elegoo to convert raw data from the sensors into actual data.
+        The VCM sends actual data to the DAM in bytes and the DAM converts the bytes into a Java String array and the
+        strings will be parsed to primitive data types (double and boolean).
+        The VCM reads user input as a character from the DAM to move the vehicle forward, backward, left, and right
+        depending on the character that is given.<br><br>
+
+        In a more layman’s description of machine learning, the software will allow the car to improvise, adapt,
+        overcome
+        situations that it was not explicitly programmed to do
+        ( e.g. It will come to its own conclusion that continuously driving into a wall is bad).<br><br>
+
+        By simple deduction, this also means that the software will not be structured with predetermined responses to
+        some
+        actions ( e.g. it will not be programmed to simply avoid walls ).
+        This type of setup allows for the software to learn from mistakes, so as to readily understand when and where
+        mistakes may be made in the future.
+        </p>
+
+        <div class="videos">
+          <section class="features-icons text-center">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6  d-none d-md-block">
+                  <div class="features-icons-icon mx-auto mb-5 mb-lg-0 mb-lg-3 project-left">
+
+                    <video width="480" autoplay loop>
+                      <source src="./video/ARIA_1.mp4" type="video/mp4">
+                    </video>
+
+                  </div>
+                </div>
+
+                <div class="col-lg-6 d-none d-md-block">
+                  <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 project-right">
+
+                    <video width="480" autoplay loop>
+                      <source src="./video/ARIA_2.mp4" type="video/mp4">
+                    </video>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <hr class="featurette-divider" style="margin-top: 120px;">
+
+  <section class="contact">
+
+    <div class="container" style="padding: 90px 0px;" id="contact">
+      <div class="subheading mb-3">Contact</div>
+      <p class="center large">Lets get in touch.</p>
+
+      <div class="row mb-2">
+
+        <div class="info col-md-5 col-sm-12">
+          <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <!-- <div class="info"> -->
+                
+              <div class="address">
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fas fa-map-marked-alt fa-fw fa-lg"></i></span>
+                    <h4 class="mb-0">Loctaion:</h4>
+                  </li>
+                  <p class="mb-1 text-muted">Los Angeles, California 90026</p>
+                </ul>
+              </div>
+
+              <div class="phone">
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fas fa-phone-alt fa-fw fa-lg"></i></span>
+                    <h4 class="mb-0">Phone:</h4>
+                  </li>
+                  <p class="mb-1 text-muted user-select-all">+1 (213) 290-8432</p>
+                </ul>
+              </div>
+              <div class="email">
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fas fa-envelope fa-fw fa-lg"></i></span>
+                    <h4 class="mb-0">Email:</h4>
+                  </li>
+                  <p class="mb-1 text-muted user-select-all">Wgarci14@gmail.com</p>
+                </ul>
+              </div>
+              <div class="follow">
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fas fa-share-alt fa-fw fa-lg"></i></span>
+                    <h4>Social Media:</h4>
+                  </li>
+                  <a href="https://my.indeed.com/p/williamg-uo9wrp4" target="_blank"><img
+                      class="fab fa-indeed fa-lg xxlarge margin-right" src="img/indeedlogo.png" alt="Larger"></a>
+                  <a href="https://www.linkedin.com/in/william-garcia-3572ab180" target="_blank"
+                    class="fab fa-linkedin fa-lg  margin-right"></a>
+                  <a href="https://www.instagram.com/wgarci14/" target="_blank"
+                    class="fab fa-instagram fa-lg margin-right"></a>
+                  <a href="https://twitter.com/wgarci141" target="_blank" class="fab fa-twitter fa-lg margin-right"></a>
+                  <a href="https://github.com/wgarci14" target="_blank" class="fab fa-github fa-lg margin-right"></a>
+                </ul>
+              </div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-7 d-none d-md-block map">
+          <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-1 d-flex flex-column position-static">
+              <iframe width="643" height="450" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBEjE25zIhtujKkB53j38EQ19xFWj-nvpo&zoom=9&center=34.0522%2C-118.2437"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p class="text-center">WILLIAM GARCIA Copyright &copy; 2020</p>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
