@@ -1,0 +1,10 @@
+Hello, thank you for downloading my example, I hope it helps you. 
+
+To actually see the code, you will need to open it with a source-code editor such as:
+    • VS code
+    • Notepad++
+    • Sublime
+    • Atom
+otherwise, it will open in your web browser.
+
+Have a great day and keep coding.
