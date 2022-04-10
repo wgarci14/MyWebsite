@@ -1,0 +1,11 @@
+/* Subhead About me */
+.subheading {
+    font-size: xx-large;                        
+}
+  
+  /* Download Button  */
+.download .btn {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;                        
+}
