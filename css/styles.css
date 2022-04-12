@@ -106,7 +106,26 @@ body::-webkit-scrollbar {
   color: rgb(255, 242, 58);
 }
 
-.jumbotronError {
+.errorM{
+  color: rgb(255, 255, 255);
+  /* padding-left: 5px; */
+  padding: 40vh 10vw;
+  /* padding-bottom: 27%; */
+  text-align: center;
+  height: fit-content;
+  min-width: fit-content;
+  min-height: fit-content;
+}
+
+.errors{
+  color: black;
+  font-family: "Russo one";
+  font-size: 50px;
+  margin: 0;
+
+}
+
+.jumbotronError404 {
   background-image: url(../img/wallhaven-4xxe34\ __whvn.cc_4xxe34.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -217,15 +236,23 @@ body::-webkit-scrollbar {
   box-shadow: 10px 10px 10px rgb(46, 54, 68, 0.3);
 }
 
-#nxp {
+#xp {
   height: 60rem;
 }
 .list-group-item {
-  height: 9rem;
+  height: 8rem;
+}
+
+.list-group-item h5{
+  font-size: 1.15rem; 
+}
+
+.list-group-item p{
+ font-size: .95rem; 
 }
 
 .list-group-item i{
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 
 hr {
